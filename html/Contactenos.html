@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/Contact.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/contactenos.js"></script>
+    <script src="../js/contactenos2.js"></script>
+    
+    <title>Contactenos</title>
+    <style>
+        #tabla{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"><nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="inicio.html">inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="Contactenos.html">contactenos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="quienes_somos.html">quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="gym.html">GYM</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav></div>
+    <header class="container">
+        <hr>
+        
+        <center><dif style="font-family: cursive;"><dif style="color: rgb(2, 2, 2);"><b><h1>Contáctanos</h1></b></dif></dif></center>
+<hr>
+    <center><p><dif style="color:rgb(255, 255, 255) ;"><dif style="font-family: 'Times New Roman';">
+    <h2><b><u>Rellene este formulario y pronto nos pondremos en contacto con usted</u></b></h2>
+    </dif></dif>
+    </p></center>
+    
+    <center><img src="../img/ImagenAgradable.jpg" width="650px" height="350px"></center>
+<hr>
+<div id="contenedor">
+    <center><p1><form class="frm" id="ContactenosForm"><br>
+        <dif style="color: white;"><label for="nombre"><u>NOMBRES:</u></label></dif>
+        <input type="text" id="nombre" placeholder="Digite sus nombres" name="nombre"> <br>
+        <br>
+        <dif style="color: white;"><label for="apellidos"><u>APELLIDOS:</u></label></dif>
+        <input type="text" id="apellidos" placeholder="Digite sus apellidos" name="apellidos"> <br>
+        <br>
+        <dif style="color: white;"><label for="Edad"><u>Edad:</u></label></dif>
+        <input type="number" id="Edad" min="1" max="100" name="Edad"> <br>
+        <br>
+        <dif style="color: white;"><label for="fecha_Nac"><u>Fecha de Nacimiento:</u></label></dif>
+        <input type="date" id="fecha_Nac" name="fecha_Nac"> <br>
+        <br>
+        <dif style="color: white;"><label><u>Género:</u></label></dif>
+        <select name="Genero" id="select_Genero" name="select_Genero">
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option> 
+        </select><br> 
+        <br>
+        <dif style="color: white;"><label for="telefono"><u>Telefono:</u></label></dif>
+        <input type="number" id="telefono" name="telefono"> <br>
+        <br>
+        <dif style="color: white;"><label for="identificación"><u>Identificación:</u></label></dif>
+        <input type="number" id="identificación" name="identificación"> <br>
+        <br>
+        <dif style="color: white;"><label for="ciudad"><u>Ciudad:</u></label></dif>
+        <input type="text" id="ciudad" name="ciudad"> <br>
+        <br>
+        <dif style="color: white;"><label for="barrio"><u>Barrio:</u></label></dif>
+        <input type="text" id="barrio" name="barrio"> <br>
+        <br>
+        <dif style="color: white;"><label for="objetivo"><u>Objetivo:</u></label></dif>
+        <input type="text" id="objetivo" name="objetivo"> <br>
+        <br>
+        <dif style="color: white;"><label><u>¿Tiene alguna incapacidad?</u></label></dif> <br>
+        <select name="Incapacidad" id="select_incapacidad" name="select_incapacidad">
+            <option value="S">Si</option>
+            <option value="F">No</option> 
+        </select><br> <br>
+        <dif style="color: white;"><label for="problema"><u>Si eligió "Si", escriba cuál:</u></label></dif> <br>
+        <input type="text" id="problema" name="problema"> <br>
+        <br>
+        <dif style="color: white;"><label for="Correo_elec"><u>Correo electrónico:</u></label></dif>
+        <input type="email" id="Correo_elec" name="Correo_elec"> <br>
+        <br>
+        <dif style="color: white;"><label for="Peso"><u>Peso:</u></label></dif>
+        <input type="text" id="Peso" name="Peso"> <br>
+        <br>
+        <dif style="color: white;"><label for="Observaciones"><u>Observaciones:</u></label></dif>
+        <input type="text" id="Observaciones" name="Observaciones"> <br>
+        <br>
+        <button type="submit" name="enviar" id="enviar" class="btn bg-dark text-light">Enviar</button><br><br>
+        </form>
+        
+        
+    </div><br>
+    <hr>
+
+    </p1></center>
+<button id="boton" onclick="mostrar();" class="btn bg-primary text-light">Mostrar tabla</button>
+<div id="tabla">
+    <br>
+    
+    <center><table border="2" id="ContactenosTabla" class="bg-light text-black">
+        <tr>
+            <th>
+                Nombres
+            </th>
+            <th>
+                Apellidos
+            </th>
+            <th>
+                Edad
+            </th>
+            <th>
+                Fecha de Nacimiento
+            </th>
+            <th>
+                Género
+            </th>
+            <th>
+                Telefono
+            </th>
+            <th>
+                ID
+           </th>
+            <th>
+                Ciudad
+            </th>
+            <th>
+                Barrio
+            </th>
+            <th>
+                Objetivo
+            </th>
+            <th>
+                Correo electrónico
+            </th>
+            <th>
+                Peso
+            </th>
+            <th>
+                Observaciones
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Camilo
+            </td>
+            <td>
+                Villalobos
+            </td>
+            <td>
+                17
+            </td>
+            <td>
+                24/02/2005
+            </td>
+            <td>
+                Masculino
+            </td>
+            <td>
+                3226479075
+            </td>
+            <td>
+                1129534383
+            </td>
+            <td>
+                Barranquilla
+            </td>
+            <td>
+                La luz
+            </td>
+            <td>
+                Salud
+            </td>
+            <td>
+                camilovillalobos252@gmail.com
+            </td>
+            <td>
+                54
+            </td>
+            <td>
+                Ninguna
+            </td>
+        </tr>
+    </table></center>
+    <br>
+    <button id="boton" onclick="ocultar();" class="btn bg-warning text-light">Ocultar tabla</button>
+    <br><br>
+    <button id="Descargar_Excel" class="btn bg-success text-light"> Exportar tabla a Excel </button>
+</div>
+    <script>
+        const form = document.getElementById('ContactenosForm')
+
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+                let ContactenosFormData = new FormData(form);
+
+                let ContactenosTablaRef = document.getElementById("ContactenosTabla")
+                let newContactenosRowRef = ContactenosTablaRef.insertRow(-1)
+
+                let newTypeCellRef = newContactenosRowRef.insertCell(0)
+                newTypeCellRef.textContent = ContactenosFormData.get('nombre');
+
+                let newContactenosCellRef = newContactenosRowRef.insertCell(1)
+                newContactenosCellRef.textContent = ContactenosFormData.get('apellidos');
+
+                let newConCellRef = newContactenosRowRef.insertCell(2)
+                newConCellRef.textContent = ContactenosFormData.get('Edad');
+
+                let newContCellRef = newContactenosRowRef.insertCell(3)
+                newContCellRef.textContent = ContactenosFormData.get('fecha_Nac');
+                
+                let newContaCellRef = newContactenosRowRef.insertCell(4)
+                newContaCellRef.textContent = ContactenosFormData.get('select_Genero');
+
+                let newContacCellRef = newContactenosRowRef.insertCell(5)
+                newContacCellRef.textContent = ContactenosFormData.get('telefono');
+
+                let newContactCellRef = newContactenosRowRef.insertCell(6)
+                newContactCellRef.textContent = ContactenosFormData.get('identificación');
+
+                let newContacteCellRef = newContactenosRowRef.insertCell(7)
+                newContacteCellRef.textContent = ContactenosFormData.get('ciudad');
+
+                let newContactenCellRef = newContactenosRowRef.insertCell(8)
+                newContactenCellRef.textContent = ContactenosFormData.get('barrio');
+
+                let newContactenoCellRef = newContactenosRowRef.insertCell(9)
+                newContactenoCellRef.textContent = ContactenosFormData.get('objetivo');
+
+                let newContactenoOCellRef = newContactenosRowRef.insertCell(10)
+                newContactenoOCellRef.textContent = ContactenosFormData.get('Correo_elec');
+
+                let newContacteno5CellRef = newContactenosRowRef.insertCell(11)
+                newContacteno5CellRef.textContent = ContactenosFormData.get('Peso');
+
+                let newContacteno6CellRef = newContactenosRowRef.insertCell(12)
+                newContacteno6CellRef.textContent = ContactenosFormData.get('Observaciones');
+
+                
+
+            })
+        </script> 
+</header>
+</div>
+<br>
+<dif style="color: white;"><marquee><h3>ITSA | 29 de Enero de 2021 | cavillalobos@itsa.edu.co | jdarenas@itsa.edu.co | afcervantes@itsa.edu.co </h3></dif></marquee>
+<br>
+</body>

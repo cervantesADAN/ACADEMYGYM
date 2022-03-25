@@ -1,0 +1,57 @@
+body{
+    background-color:black;
+}
+
+header{
+    text-align: center; 
+    border: 2px rgb(255, 3, 3) solid; 
+    background-color: rgb(255, 0, 0);
+    color: white;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.p1{
+    background-color: rgb(255, 0, 0);
+    color: black;
+}
+.F1{
+    background-color: red;
+    color: white;
+}
+.p2{
+    border: 2;
+}
+.ejercicio{
+    float: left;
+}
+
+.p3{
+    text-align: center; 
+}
+.p4{
+    text-align: center;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.bloq_1{
+    display: flex;
+    justify-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.bloq_2{
+    display: flex;
+    justify-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.bloq_3{
+    display: flex;
+    justify-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
